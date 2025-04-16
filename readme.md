@@ -1,3 +1,6 @@
+This is a POC project to make a cache without modifying the business logic which relays on a lazy load. 
+Ideal solution would be using targeted Queries with fetch and join. If that's not possible for a read only purpose this could be a valuable solution.
+
 
 Start database
 ```shell
