@@ -45,11 +45,11 @@ public class CustomerViewer extends JPanel {
         List<Customer> customers = query.getResultList();
 
         if(checkBox.isSelected()) {
-            Customer.initializeStaticCache(em);
-            Order.initializeStaticCache(em);
+            Customer.preLoadedCache.initializeStaticCache(em);
+            Order.preLoadedCache.initializeStaticCache(em);
         }else{
-            Customer.clearCache();
-            Order.clearCache();
+            Customer.preLoadedCache.clearCache();
+            Order.preLoadedCache.clearCache();
         }
 
         for (Customer c : customers) {
