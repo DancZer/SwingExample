@@ -78,6 +78,6 @@ public class CustomerViewer extends JPanel {
         double durationMillis = durationNano / 1_000_000.0;
         double durationSeconds = durationNano / 1_000_000_000.0;
 
-        System.out.printf("Execution time: %.3f seconds (%.2f ms) with cache:%s", durationSeconds, durationMillis, checkBox.isSelected());
+        System.out.printf("Execution time: %.3f seconds (%.2f ms) with cache:%s\n", durationSeconds, durationMillis, checkBox.isSelected());
     }
 }
